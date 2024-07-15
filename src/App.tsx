@@ -29,7 +29,11 @@ const App = () => {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <NavLink className="nav-link" aria-current="page" to="/">
+                  <NavLink
+                    className="nav-link"
+                    aria-current="page"
+                    to="/reactbuild"
+                  >
                     Home
                   </NavLink>
                 </li>
@@ -37,7 +41,7 @@ const App = () => {
                   <NavLink
                     className="nav-link"
                     aria-current="page"
-                    to="/users"
+                    to="/reactbuild/users"
                     end={true}
                   >
                     Users
