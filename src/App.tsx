@@ -1,4 +1,4 @@
-import { NavLink, Route, Routes } from "react-router-dom";
+import { Link, NavLink, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import UserList from "./components/UserList";
 import logo from "/logo.png";
@@ -9,9 +9,9 @@ const App = () => {
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <Link className="navbar-brand" to="/reactbuild">
               <img src={logo} alt="Courseinn Logo" width="200" />
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -60,8 +60,8 @@ const App = () => {
         </nav>
 
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/users" element={<UserList />}></Route>
+          <Route path="/reactbuild/" element={<Home />}></Route>
+          <Route path="/reactbuild/users" element={<UserList />}></Route>
         </Routes>
       </div>
     </>
